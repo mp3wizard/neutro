@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
         imageScalePadding: 0,
         autoPlay: {
     		// autoplay options go gere
-    		enabled: false,
+    		enabled: true,
     		pauseOnHover: true,
     		delay: 3000
     	}

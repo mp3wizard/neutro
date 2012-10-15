@@ -443,7 +443,7 @@ footer a:hover {
 .rsSlide a {
   display: block;
 }
-/* Call Back for IE8 */
+/* Fix CSS Bug */
 .ie8 .rsDefault .rsArrowIcn {
   background-color: #f15b23;
 }
@@ -469,6 +469,9 @@ footer a:hover {
 }
 .ie8 #content {
   background-color: #f3f3f3;
+}
+.mobile header nav ul li a {
+  font-size: 16px;
 }
 /*
  * Clearfix: contain floats
