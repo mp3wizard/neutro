@@ -1,0 +1,143 @@
+@import  'font';
+@import  'lesshat';
+
+/* Define Color */
+@orange: #f15b23;
+@orange2: #fba71a;
+@grey: #616161;
+@lightgrey: #e9e9e9;
+@bgContent: #f3f3f3;
+@bgBody: #fdfdfe;
+@footer: #979797;
+
+body { background: url('../img/bgBody.png') no-repeat top left fixed; background-size: 100% 100%; .ff-psl;  font-size: 20px; line-height: 24px; color: @grey; }
+header { background: url('../img/bgHeader.png') no-repeat center top; position: relative; z-index: 3; width: 960px; margin: 0 auto; height: 125px;
+ 	h1 { margin: 0; 
+	 	a { display: block; text-indent: -1000em; .size(185px, 127px); background: url('../img/logo.png') no-repeat; position: absolute; left: 30px; top: 0; }
+ 	}
+ 	nav ul { list-style: none; margin: 0; position: absolute; left: 260px; top: 70px;
+ 		li { display: block; float: left; text-transform: capitalize; 
+ 			a { color: @orange; .ff-helvetica; font-size: 16px; border-left: solid 1px @orange; line-height: 10px; height: 14px; display: block; padding:0 29px; letter-spacing: .5px; }
+ 			a:hover, a.active { color: #000;text-decoration: none; }
+ 		}
+ 		li:first-child > a { padding-left: 0; border-left: none; }
+ 		li:last-child > a { padding-right: 0; }
+ 	}
+ 	a.button.black { position: absolute; right: 0; top: 60px;  }
+} 
+.webkit nav ul li a { font-size: 17px; }
+.tooltip { font-size: 11px; line-height: 16px; font-family: Arial, Helvetica;  }
+#container:before, #container:after { height: 50px; width: 50%; position: absolute; z-index: 1; background-color: @orange; display: block; content: ''; left: auto; top: 0; right: 0; }
+#container:after { background-color: @orange2; left: 0; }
+.button.black { .size(189px, 41px); .border-radius(8px); background-color: #000; .gradient(~"linear-gradient(bottom, #323232 -5%, #353535 48.9%, #4a4a4a 50%, #7b7b7b 105%)"); color: #fff; display: block; text-align: center; line-height: 36px; text-decoration: none; font-size: 16px; .ff-helvetica;  }
+.button.black:hover { color: @orange2; }
+
+#content { width: 960px; background-color: @bgContent; -moz-box-shadow: 0 0 5px rgba(0,0,0,.2); -webkit-box-shadow: 0 0 5px rgba(0,0,0,.2); box-shadow: 0 0 5px rgba(0,0,0,.2); margin: 0 auto; padding-bottom: 40px; position: relative;
+	article { float: left; margin-left: 30px;}
+	article > h3 { font-weight: normal; color: @orange; font-size: 35px; }
+	aside { float: right; }
+}
+footer { clear: both; text-align: center;  color: @footer; font-size: 14px; font-family: Arial, Helvetica;
+	a { text-transform: capitalize; color: @footer; display: inline-block; padding: 10px 10px 0; }
+	a:hover { color: @footer;}
+}
+#content > h2 { .size(160px, 31px); line-height: 26px; color: #fff; background: @orange; margin: 0; text-align: center; .border-radius( 0 0 8px 8px); .ff-helvetica; font-size: 18px; font-weight: normal; letter-spacing: .5px; position: absolute; right: 15px; /* .box-shadow(~"0 1px 10px rgba(0,0,0,.5)"); */}
+
+/* Product Page */
+#content.bgProduct { background: @bgContent url('../img/bgProductPage.png') no-repeat left 55px;
+	article { margin-left: 180px; width: 380px; margin-top: 20px; 
+		h3 {   position: relative; left: -25px; line-height: 30px; margin: 0 0 20px;
+			span { display: block; text-align: right; width: 95%; }
+		}
+		p { font-size: 24px; background: url('../img/bgOrange.png') no-repeat 180px 0; height: 57px; padding-top: 5px; }
+		table { width: 100%; 
+			th { text-align: left; font-weight: normal; color: #fff; background-color: @orange;  }
+			th, td { padding: 0 8px; height: 25px; vertical-align: bottom;  line-height: 22px;}
+			tbody > tr > td { color: @orange; }
+			tbody > tr:first-child > td { padding-top: 10px; }
+			tbody > tr:nth-child(2n) > td { background-color: #fff; color: @grey; }
+			tbody > tr > td:nth-child(2) { width: 35px; }
+			tbody > tr > td:nth-child(3) {  white-space: nowrap; width: 40px; padding-right: 0; }
+			tfoot > tr > td { padding-top: 30px; color: @orange; }
+		}
+	}
+	aside { width: 320px; margin-top: 40px; 
+		dl { background-color: @lightgrey; padding: 15px 20px; float: left; margin: 0; .border-radius(8px); font-size: 20px; letter-spacing: .5px;
+			dt { font-weight: normal; }
+			dd ul { margin-left: 5px; margin-bottom: 0; }
+		}
+	}
+}
+/* Contact Page */
+#container.contact { 
+	article { float: left; }
+	aside { float: right; width: 220px; padding-right: 10px; margin-top: 110px; 
+		 a { color: @grey; }
+	}
+	 h3 { .ff-helvetica; font-size: 24px; margin: 15px 10px 30px; }
+	 #map { -moz-box-shadow: 0 0 5px rgba(0,0,0,.2); -webkit-box-shadow: 0 0 5px rgba(0,0,0,.2); box-shadow: 0 0 5px rgba(0,0,0,.2); .size(680px, 400px); }
+	 h4 { font-weight: normal; color: @orange; font-size: 21px; margin: 5px 0; }
+	 label { font-size: 20px; color: @orange; display: inline; }
+	 p { margin-bottom: 30px; }
+	
+}
+#container.home { 
+	div.figure { padding: 10px; }
+	figure { display: block; float: left; margin: 0 17px 0 0; padding-top: 20px; .size(300px, 138px); .border-radius(4px); background-color: #fff; .box-shadow(~"0 0 5px rgba(0,0,0,.2)"); position: relative;
+		h2 { font-weight: normal; margin: 0; .ff-helvetica; font-size: 15px; background-color: #d9c199; line-height: 21px; height: 23px; padding: 0 10px; color: #000; }
+		.button.black { .size(84px, 27px); .border-radius(4px); line-height: 24px; font-size: 13px; position: absolute; z-index: 6; bottom: 10px; left: 10px;}
+		figurecaption, p { font-size: 17px; line-height: 16px; display: block; color: rgba(96,96,96,0.7); padding: 10px; position: relative; z-index: 5;}
+		img { position: absolute; top: 0; right: 0; }
+	}
+	figure:last-child { margin-right: 0; }
+}
+.royalSlider { width: 940px; margin: 10px;}
+.rsDefault .rsOverflow, .rsDefault .rsSlide, .rsDefault .rsVideoFrameHolder, .rsDefault .rsThumbs { background-color: transparent; }
+.rsDefault .rsBullets { background-color: transparent; text-align: right; }
+.rsDefault .rsBullet { cursor: pointer; width: 10px; height: 11px; background: url('../img/bullet.png') no-repeat; }
+.rsDefault .rsBullet.rsNavSelected { background-position: 0 bottom;}
+.rsDefault .rsArrowIcn { background-color: fade(@orange,90%); }
+.rsDefault .rsArrowIcn:hover { background-color: saturate(@orange,100%); }
+.rsDefault .rsArrowDisabled .rsArrowIcn, .rsDefault .rsArrowDisabled .rsArrowIcn:hover{ background-color: fade(@grey, 30%); cursor: default;  }
+.rsSlide a { display: block; }
+
+/* Call Back for IE8 */
+.ie8 .rsDefault .rsArrowIcn { background-color: @orange; }
+.ie8 .rsDefault .rsArrowIcn:hover { background-color: @orange; }
+.ie8 .rsDefault .rsArrowDisabled .rsArrowIcn, .ie8 .rsDefault .rsArrowDisabled .rsArrowIcn:hover { background-color: #ccc; }
+.ie8 nav ul li a { font-size: 18px; }
+.ie8 #container.home figure, .ie8 #content { border: solid 1px #e0e1e1; }
+.ie8 #container.home figure { }
+.ie9 .button.black { background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDg0IDI3IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9ImhhdDAiIGdyYWRpZW50VW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB4MT0iNTAlIiB5MT0iMTA1JSIgeDI9IjUwJSIgeTI9Ii01LjAwMDAwMDAwMDAwMDAyJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzMjMyMzIiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iIzM1MzUzNSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNGE0YTRhIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjN2I3YjdiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgPC9saW5lYXJHcmFkaWVudD4KCjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4NCIgaGVpZ2h0PSIyNyIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); }
+.ie8 figure p { background-color: #fff; }
+.ie8 #content { background-color: #f3f3f3; }
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
