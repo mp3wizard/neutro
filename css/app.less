@@ -111,6 +111,28 @@ footer { clear: both; text-align: center;  color: @footer; font-size: 13px; font
 .rsDefault .rsArrowDisabled .rsArrowIcn, .rsDefault .rsArrowDisabled .rsArrowIcn:hover{ background-color: fade(@grey, 30%); cursor: default;  }
 .rsSlide a { display: block; }
 
+#container.nutrition { 
+	article { float: none; }
+	#content > article >  h3 { font-weight: normal; color: @orange; font-size: 36px; left: 0; margin-top: 0;}
+	table { width: 640px; 
+		caption { text-align: left; color: @orange; line-height: 30px; font-size: 20px; }
+		th { background: @orange; color: #fff; font-weight: normal; font-size: 22px; vertical-align: middle;  }
+		th, td { padding: 2px 17px 0; }
+		thead th, tbody td { border: dotted 1px #d0d0d0; }
+		tbody > tr:nth-child(2n) > td { background-color: #fff; }
+		tbody > tr > td:nth-child(1), tbody > tr > td:nth-child(2)  { white-space: nowrap; }
+		tbody > tr > td { vertical-align: top; font-size: 20px; line-height: 26px;  }
+		tbody > tr:last-child > td { border-bottom: none; }
+		tfoot td { color: @orange; padding: 15px 0; font-size: 20px; }
+	}
+	#content > article:nth-child(2) { padding-left: 260px; background: url('../img/imgVegetarian.png') no-repeat -30px 10px; padding-top: 50px; 
+		tbody > tr > td:nth-child(3) { width: 215px; }
+	}
+	#content > article:nth-child(3) { padding-left: 20px; background: url('../img/imgJigsaw.png') no-repeat right 0; padding-top: 40px; 
+		tbody > tr > td:nth-child(3) { width: 195px; }
+	} 	
+}
+
 /* Fix CSS Bug */
 .ie8 .rsDefault .rsArrowIcn { background-color: @orange; }
 .ie8 .rsDefault .rsArrowIcn:hover { background-color: @orange; }
