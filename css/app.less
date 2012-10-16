@@ -32,14 +32,14 @@ header { background: url('../img/bgHeader.png') no-repeat center top; position: 
 .button.black { .size(189px, 41px); .border-radius(8px); background-color: #000; .gradient(~"linear-gradient(bottom, #323232 -5%, #353535 48.9%, #4a4a4a 50%, #7b7b7b 105%)"); color: #fff; display: block; text-align: center; line-height: 36px; text-decoration: none; font-size: 16px; .ff-helvetica;  }
 .button.black:hover { color: @orange2; }
 
-#content { width: 960px; background-color: @bgContent; -moz-box-shadow: 0 0 5px rgba(0,0,0,.2); -webkit-box-shadow: 0 0 5px rgba(0,0,0,.2); box-shadow: 0 0 5px rgba(0,0,0,.2); margin: 0 auto; padding-bottom: 40px; position: relative;
+#content { width: 960px; background-color: @bgContent; -moz-box-shadow: 0 0 5px rgba(0,0,0,.2); -webkit-box-shadow: 0 0 5px rgba(0,0,0,.2); box-shadow: 0 0 5px rgba(0,0,0,.2); margin: 0 auto; padding-bottom: 50px; position: relative; min-height: 600px; 
 	article { float: left; margin-left: 30px;}
 	article > h3 { font-weight: normal; color: @orange; font-size: 35px; }
 	aside { float: right; }
 }
-footer { clear: both; text-align: center;  color: @footer; font-size: 14px; font-family: Arial, Helvetica;
-	a { text-transform: capitalize; color: @footer; display: inline-block; padding: 10px 10px 0; }
-	a:hover { color: @footer;}
+footer { clear: both; text-align: center;  color: @footer; font-size: 13px; font-family: Arial, Helvetica; position: absolute; width: 100%; position: absolute; bottom: 10px;
+	a { text-transform: capitalize; color: @footer; display: inline-block; padding: 5px 5px 0; }
+	a:hover { color: @orange2; text-decoration: none;}
 }
 #content > h2 { .size(160px, 31px); line-height: 26px; color: #fff; background: @orange; margin: 0; text-align: center; .border-radius( 0 0 8px 8px); .ff-helvetica; font-size: 18px; font-weight: normal; letter-spacing: .5px; position: absolute; right: 15px; /* .box-shadow(~"0 1px 10px rgba(0,0,0,.5)"); */}
 
@@ -79,7 +79,13 @@ footer { clear: both; text-align: center;  color: @footer; font-size: 14px; font
 	 h4 { font-weight: normal; color: @orange; font-size: 21px; margin: 5px 0; }
 	 label { font-size: 20px; color: @orange; display: inline; }
 	 p { margin-bottom: 30px; }
-	
+	article ul { list-style: none; margin: 80px 0 0 90px;
+		li { margin-bottom: 10px; 
+			img { margin-right: 5px; }
+			a { color: @orange; display: block; line-height: 26px; font-size: 20px; }
+			a:hover { color: @orange2; text-decoration: none; }
+		}
+	}
 }
 #container.home { 
 	div.figure { padding: 10px; }
@@ -90,6 +96,10 @@ footer { clear: both; text-align: center;  color: @footer; font-size: 14px; font
 		img { position: absolute; top: 0; right: 0; }
 	}
 	figure:last-child { margin-right: 0; }
+	figure:first-child { 
+		.button.black { bottom: 28px; }
+		em  { font-size: 10px; display: block; line-height: 9px; font-style: normal; position: absolute; bottom: 5px; left: 10px; }
+	}
 }
 .royalSlider { width: 940px; margin: 10px;}
 .rsDefault .rsOverflow, .rsDefault .rsSlide, .rsDefault .rsVideoFrameHolder, .rsDefault .rsThumbs { background-color: transparent; }

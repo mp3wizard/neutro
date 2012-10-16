@@ -1,6 +1,7 @@
 jQuery(document).ready(function($){ 
 	$('a[rel=tooltip]').tooltip();
 	$(".royalSlider").royalSlider({
+        loop: true,
         autoHideArrows: true,
         arrowsNavHideOnTouch: true,
         keyboardNavEnabled: true,
@@ -9,7 +10,7 @@ jQuery(document).ready(function($){
     		// autoplay options go gere
     		enabled: true,
     		pauseOnHover: true,
-    		delay: 3000
+    		delay: 5000
     	}
     });  
 });

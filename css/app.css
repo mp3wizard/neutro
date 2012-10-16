@@ -158,8 +158,9 @@ header a.button.black {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   position: relative;
+  min-height: 600px;
 }
 #content article {
   float: left;
@@ -177,17 +178,22 @@ footer {
   clear: both;
   text-align: center;
   color: #979797;
-  font-size: 14px;
+  font-size: 13px;
   font-family: Arial, Helvetica;
+  position: absolute;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
 }
 footer a {
   text-transform: capitalize;
   color: #979797;
   display: inline-block;
-  padding: 10px 10px 0;
+  padding: 5px 5px 0;
 }
 footer a:hover {
-  color: #979797;
+  color: #fba71a;
+  text-decoration: none;
 }
 #content > h2 {
   width: 160px;
@@ -339,6 +345,26 @@ footer a:hover {
 #container.contact p {
   margin-bottom: 30px;
 }
+#container.contact article ul {
+  list-style: none;
+  margin: 80px 0 0 90px;
+}
+#container.contact article ul li {
+  margin-bottom: 10px;
+}
+#container.contact article ul li img {
+  margin-right: 5px;
+}
+#container.contact article ul li a {
+  color: #f15b23;
+  display: block;
+  line-height: 26px;
+  font-size: 20px;
+}
+#container.contact article ul li a:hover {
+  color: #fba71a;
+  text-decoration: none;
+}
 #container.home div.figure {
   padding: 10px;
 }
@@ -405,6 +431,18 @@ footer a:hover {
 }
 #container.home figure:last-child {
   margin-right: 0;
+}
+#container.home figure:first-child .button.black {
+  bottom: 28px;
+}
+#container.home figure:first-child em {
+  font-size: 10px;
+  display: block;
+  line-height: 9px;
+  font-style: normal;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
 }
 .royalSlider {
   width: 940px;
