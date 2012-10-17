@@ -6,6 +6,7 @@
 @orange2: #fba71a;
 @grey: #616161;
 @lightgrey: #e9e9e9;
+@lightgrey2: #dfdfdf;
 @bgContent: #f3f3f3;
 @bgBody: #fdfdfe;
 @footer: #979797;
@@ -131,6 +132,19 @@ footer { clear: both; text-align: center;  color: @footer; font-size: 13px; font
 	#content > article:nth-child(3) { padding-left: 20px; background: url('../img/imgJigsaw.png') no-repeat right 0; padding-top: 40px; 
 		tbody > tr > td:nth-child(3) { width: 195px; }
 	} 	
+}
+#container.faq { 
+	article > h3 { margin: 20px 0; }
+	dl { margin: 0; }
+	dt { background-color: @lightgrey2; height: 38px; padding: 0 10px; font-weight: normal; line-height: 40px; color: @orange; font-size: 22px; }
+	dd { margin: 10px; font-size: 18px; padding-bottom: 20px; }
+	.button.black { .size(68px, 22px); .border-radius(3px); line-height: 22px; font-size: 13px; font-family: Arial, Helvetica; }
+	article { padding-right: 35px; }
+}
+.pagination { text-align: right; padding: 0 35px;
+	a { display: inline-block; .size(30px, 30px); text-align: center;line-height: 30px; background: #c7c7c7; font-size: 14px; font-family: Arial, Helvetica; color: @grey; }
+	a.active, a:hover { cursor: default; color: #fff; background-color: @orange; }
+	a:hover { text-decoration: none; cursor: pointer; }
 }
 
 /* Fix CSS Bug */
