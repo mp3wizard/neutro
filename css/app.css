@@ -587,6 +587,88 @@ footer a:hover {
 #container.faq article {
   padding-right: 35px;
 }
+#container.faq .detail article {
+  float: none;
+}
+#container.faq .detail .button.black {
+  font-size: 16px;
+  font-family: Arial, Helvetica;
+  width: 83px;
+  height: 27px;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  line-height: 27px;
+  float: right;
+  margin-right: 35px;
+  clear: both;
+}
+#container.faq .detail article > h4 {
+  font-weight: normal;
+  font-size: 22px;
+  height: 38px;
+  line-height: 40px;
+  background: #dfdfdf;
+  padding: 0 10px;
+  color: #f15b23;
+}
+#container.faq .detail h5,
+#container.faq .detail h6 {
+  color: #f15b23;
+  font-weight: normal;
+  font-size: 20px;
+}
+#container.faq .detail h6 {
+  margin: 0;
+  font-size: 18px;
+}
+#container.faq .detail p {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 19px;
+  margin: 0;
+}
+#container.faq .detail p em {
+  color: #f15b23;
+}
+#container.faq .detail p strong {
+  font-weight: normal;
+  color: #f15b23;
+}
+#container.faq .detail section dt {
+  height: auto;
+  font-weight: normal;
+  background: none;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+#container.faq .detail section dd {
+  margin: 0;
+}
+#container.faq .detail section dd ul {
+  margin: 0 0 20px 25px;
+  list-style: none;
+}
+#container.faq .detail section dd ul li:before {
+  content: '\2022';
+  display: block;
+  position: relative;
+  max-width: 0px;
+  max-height: 0px;
+  left: -12px;
+  top: 0;
+  color: #f15b23;
+  font-size: 16px;
+}
+#container.faq .detail section dd ol {
+  margin-left: 20px;
+}
 .pagination {
   text-align: right;
   padding: 0 35px;

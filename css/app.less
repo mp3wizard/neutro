@@ -141,6 +141,24 @@ footer { clear: both; text-align: center;  color: @footer; font-size: 13px; font
 	.button.black { .size(68px, 22px); .border-radius(3px); line-height: 22px; font-size: 13px; font-family: Arial, Helvetica; }
 	article { padding-right: 35px; }
 }
+#container.faq .detail { 
+	article { float: none; }
+	.button.black { font-size: 16px; font-family: Arial, Helvetica; .size(83px, 27px); .border-radius(4px); line-height: 27px; float: right; margin-right: 35px; clear: both; }
+	article > h4 { font-weight: normal; font-size: 22px; height: 38px; line-height: 40px; background: @lightgrey2; padding: 0 10px; color: @orange; }
+	h5, h6 { color: @orange; font-weight: normal; font-size: 20px; }
+	h6 { margin: 0; font-size: 18px; }
+	p { font-size: 18px; text-indent: 30px; line-height: 19px; margin: 0;
+		em { color: @orange; }
+		strong { font-weight: normal; color: @orange; }
+	}
+	section dt { height: auto; font-weight: normal; background: none; font-size: inherit; color: inherit; margin: 0; padding: 0; line-height: inherit; }
+	section dd { margin: 0;
+		 ul { margin: 0 0 20px 25px; list-style: none;
+			 li:before { content:'\2022'; display: block; position: relative; max-width: 0px; max-height: 0px; left: -12px;top: 0;color: @orange; font-size: 16px;    }
+		 }
+		 ol { margin-left: 20px;}
+	}
+}
 .pagination { text-align: right; padding: 0 35px;
 	a { display: inline-block; .size(30px, 30px); text-align: center;line-height: 30px; background: #c7c7c7; font-size: 14px; font-family: Arial, Helvetica; color: @grey; }
 	a.active, a:hover { cursor: default; color: #fff; background-color: @orange; }
