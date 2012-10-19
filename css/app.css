@@ -605,6 +605,12 @@ footer a:hover {
   float: right;
   margin-right: 35px;
   clear: both;
+  margin-top: 20px;
+}
+#container.faq .detail .button.black.editor {
+  position: relative;
+  top: -30px;
+  margin-top: 0;
 }
 #container.faq .detail article > h4 {
   font-weight: normal;
@@ -638,6 +644,10 @@ footer a:hover {
   font-weight: normal;
   color: #f15b23;
 }
+#container.faq .detail p.unindent {
+  margin: 0 0 20px;
+  text-indent: 0;
+}
 #container.faq .detail section dt {
   height: auto;
   font-weight: normal;
@@ -648,14 +658,18 @@ footer a:hover {
   padding: 0;
   line-height: inherit;
 }
-#container.faq .detail section dd {
+#container.faq .detail section dd,
+#container.faq .detail section {
   margin: 0;
+  font-size: 18px;
 }
-#container.faq .detail section dd ul {
+#container.faq .detail section dd ul,
+#container.faq .detail section ul {
   margin: 0 0 20px 25px;
   list-style: none;
 }
-#container.faq .detail section dd ul li:before {
+#container.faq .detail section dd ul li:before,
+#container.faq .detail section ul li:before {
   content: '\2022';
   display: block;
   position: relative;
@@ -666,8 +680,40 @@ footer a:hover {
   color: #f15b23;
   font-size: 16px;
 }
-#container.faq .detail section dd ol {
+#container.faq .detail section dd ol,
+#container.faq .detail section ol {
   margin-left: 20px;
+}
+#container.faq .detail #editor {
+  background-color: #fff;
+  padding: 8px;
+  width: 342px;
+  height: 130px;
+  -webkit-border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 8px;
+  -moz-background-clip: padding;
+  border-radius: 8px;
+  background-clip: padding-box;
+  font-size: 17px;
+  margin: 40px 0 0;
+  line-height: 16px;
+}
+#container.faq .detail #editor strong {
+  font-weight: normal;
+  color: #f15b23;
+  margin-top: 65px;
+  display: block;
+}
+#container.faq .detail #editor img {
+  display: block;
+  float: left;
+  margin-right: 8px;
+}
+#container.faq .detail #editor hr {
+  margin: 0 0 5px;
+  border: none;
+  border-top: solid 1px #b4b4b4;
 }
 .pagination {
   text-align: right;
