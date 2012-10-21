@@ -481,6 +481,66 @@ footer a:hover {
 .rsSlide a {
   display: block;
 }
+table caption {
+  text-align: left;
+  color: #f15b23;
+  line-height: 30px;
+  font-size: 20px;
+}
+table th {
+  background: #f15b23;
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+  vertical-align: middle;
+}
+table th,
+table td {
+  padding: 2px 17px 0;
+}
+table thead th,
+table tbody td {
+  border: dotted 1px #d0d0d0;
+}
+table tbody > tr:nth-child(2n) > td {
+  background-color: #fff;
+}
+table tbody > tr > td:nth-child(1),
+table tbody > tr > td:nth-child(2) {
+  white-space: nowrap;
+}
+table tbody > tr > td {
+  vertical-align: top;
+  font-size: 20px;
+  line-height: 26px;
+}
+table tfoot td {
+  color: #f15b23;
+  padding: 15px 0;
+  font-size: 20px;
+}
+table td.grey {
+  background-color: #f3f3f3!important;
+  text-align: center;
+  border-right: dotted 1px #d0d0d0;
+}
+table td.right {
+  text-align: right;
+  border-top: dotted 1px #d0d0d0;
+}
+table td.table {
+  padding: 0!important;
+  height: 100%;
+}
+table table {
+  margin: 0!important;
+}
+table table td {
+  border: 0;
+}
+table table td {
+  border-top: 0;
+}
 #container.nutrition article {
   float: none;
 }
@@ -494,46 +554,8 @@ footer a:hover {
 #container.nutrition table {
   width: 640px;
 }
-#container.nutrition table caption {
-  text-align: left;
-  color: #f15b23;
-  line-height: 30px;
-  font-size: 20px;
-}
-#container.nutrition table th {
-  background: #f15b23;
-  color: #fff;
-  font-weight: normal;
-  font-size: 22px;
-  vertical-align: middle;
-}
-#container.nutrition table th,
-#container.nutrition table td {
-  padding: 2px 17px 0;
-}
-#container.nutrition table thead th,
-#container.nutrition table tbody td {
-  border: dotted 1px #d0d0d0;
-}
-#container.nutrition table tbody > tr:nth-child(2n) > td {
-  background-color: #fff;
-}
-#container.nutrition table tbody > tr > td:nth-child(1),
-#container.nutrition table tbody > tr > td:nth-child(2) {
-  white-space: nowrap;
-}
-#container.nutrition table tbody > tr > td {
-  vertical-align: top;
-  font-size: 20px;
-  line-height: 26px;
-}
 #container.nutrition table tbody > tr:last-child > td {
   border-bottom: none;
-}
-#container.nutrition table tfoot td {
-  color: #f15b23;
-  padding: 15px 0;
-  font-size: 20px;
 }
 #container.nutrition #content > article:nth-child(2) {
   padding-left: 260px;
@@ -586,6 +608,47 @@ footer a:hover {
 }
 #container.faq article {
   padding-right: 35px;
+}
+#container.faq table {
+  width: 100%;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+#container.faq table th,
+#container.faq table td {
+  padding: 0 8px;
+}
+#container.faq table th {
+  white-space: nowrap;
+}
+#container.faq table td {
+  vertical-align: middle;
+  padding: 0 8px;
+  line-height: 24px;
+}
+#container.faq table tbody > tr > td:nth-child(1) {
+  text-align: right;
+}
+#container.faq table td.right {
+  width: 50px;
+}
+#container.faq p {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 19px;
+  margin: 0;
+}
+#container.faq p em {
+  color: #f15b23;
+  font-style: normal;
+}
+#container.faq p strong {
+  font-weight: normal;
+  color: #f15b23;
+}
+#container.faq img.table {
+  width: 100%;
+  margin-bottom: 30px;
 }
 #container.faq .detail article {
   float: none;
@@ -740,6 +803,10 @@ footer a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+/* News & Activities*/
+#container.news article {
+  float: none;
+}
 /* Fix CSS Bug */
 .ie8 .rsDefault .rsArrowIcn {
   background-color: #f15b23;
@@ -799,4 +866,9 @@ footer a:hover {
  */
 .clearfix {
   *zoom: 1;
+}
+@media print {
+  #container.faq.detail2 img {
+    display: none;
+  }
 }

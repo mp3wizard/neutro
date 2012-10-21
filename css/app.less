@@ -112,19 +112,28 @@ footer { clear: both; text-align: center;  color: @footer; font-size: 13px; font
 .rsDefault .rsArrowDisabled .rsArrowIcn, .rsDefault .rsArrowDisabled .rsArrowIcn:hover{ background-color: fade(@grey, 30%); cursor: default;  }
 .rsSlide a { display: block; }
 
+table { 
+	caption { text-align: left; color: @orange; line-height: 30px; font-size: 20px; }
+	th { background: @orange; color: #fff; font-weight: normal; font-size: 22px; vertical-align: middle;  }
+	th, td { padding: 2px 17px 0; }
+	thead th, tbody td { border: dotted 1px #d0d0d0; }
+	tbody > tr:nth-child(2n) > td { background-color: #fff; }
+	tbody > tr > td:nth-child(1), tbody > tr > td:nth-child(2)  { white-space: nowrap; }
+	tbody > tr > td { vertical-align: top; font-size: 20px; line-height: 26px;  }
+	tfoot td { color: @orange; padding: 15px 0; font-size: 20px; }
+	td.grey { background-color: #f3f3f3!important; text-align: center; border-right: dotted 1px #d0d0d0; }
+	td.right { text-align: right; border-top: dotted 1px #d0d0d0; }
+	td.table { padding: 0!important; height: 100%; }
+	table { margin: 0!important;  }
+	table td { border: 0; }
+	table td { border-top: 0; }
+}
+
 #container.nutrition { 
 	article { float: none; }
 	#content > article >  h3 { font-weight: normal; color: @orange; font-size: 36px; left: 0; margin-top: 0;}
 	table { width: 640px; 
-		caption { text-align: left; color: @orange; line-height: 30px; font-size: 20px; }
-		th { background: @orange; color: #fff; font-weight: normal; font-size: 22px; vertical-align: middle;  }
-		th, td { padding: 2px 17px 0; }
-		thead th, tbody td { border: dotted 1px #d0d0d0; }
-		tbody > tr:nth-child(2n) > td { background-color: #fff; }
-		tbody > tr > td:nth-child(1), tbody > tr > td:nth-child(2)  { white-space: nowrap; }
-		tbody > tr > td { vertical-align: top; font-size: 20px; line-height: 26px;  }
 		tbody > tr:last-child > td { border-bottom: none; }
-		tfoot td { color: @orange; padding: 15px 0; font-size: 20px; }
 	}
 	#content > article:nth-child(2) { padding-left: 260px; background: url('../img/imgVegetarian.png') no-repeat -30px 10px; padding-top: 50px; 
 		tbody > tr > td:nth-child(3) { width: 215px; }
@@ -140,6 +149,18 @@ footer { clear: both; text-align: center;  color: @footer; font-size: 13px; font
 	dd { margin: 10px; font-size: 18px; padding-bottom: 20px; }
 	.button.black { .size(68px, 22px); .border-radius(3px); line-height: 22px; font-size: 13px; font-family: Arial, Helvetica; }
 	article { padding-right: 35px; }
+	table { width: 100%;font-size: 19px; margin-bottom: 30px;
+		th, td {  padding: 0 8px; }
+		th { white-space: nowrap; }
+		td { vertical-align: middle; padding: 0 8px; line-height: 24px; }
+		tbody > tr > td:nth-child(1) { text-align: right; }
+		td.right { width: 50px; }
+	}
+	p { font-size: 18px; text-indent: 30px; line-height: 19px; margin: 0;
+		em { color: @orange; font-style: normal; }
+		strong { font-weight: normal; color: @orange; }
+	}
+	img.table { width: 100%; margin-bottom: 30px; }
 }
 #container.faq .detail { 
 	article { float: none;  }
@@ -170,6 +191,11 @@ footer { clear: both; text-align: center;  color: @footer; font-size: 13px; font
 	a { display: inline-block; .size(30px, 30px); text-align: center;line-height: 30px; background: #c7c7c7; font-size: 14px; font-family: Arial, Helvetica; color: @grey; }
 	a.active, a:hover { cursor: default; color: #fff; background-color: @orange; }
 	a:hover { text-decoration: none; cursor: pointer; }
+}
+
+/* News & Activities*/
+#container.news { 
+	article { float: none; }
 }
 
 /* Fix CSS Bug */
@@ -214,3 +240,6 @@ footer { clear: both; text-align: center;  color: @footer; font-size: 13px; font
 .clearfix {
     *zoom: 1;
 }
+@media print { 
+	#container.faq.detail2 img { display: none; }
+} 
