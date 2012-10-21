@@ -807,6 +807,95 @@ table table td {
 #container.news article {
   float: none;
 }
+#container.news article > h3 {
+  font-family: 'HelvethaicaMon Med', Arial, Helvetica;
+  font-size: 24px;
+  font-weight: normal;
+}
+#container.news article > div {
+  padding: 15px 30px 10px 240px;
+  position: relative;
+  min-height: 120px;
+}
+#container.news article > div .img_border {
+  width: 220px;
+  height: 110px;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,.2);
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#container.news article > div h4 {
+  height: 24px;
+  background: #dfdfdf;
+  padding-left: 20px;
+  line-height: 18px;
+  color: #f15b23;
+  font-weight: normal;
+  font-family: 'HelvethaicaMon Med', Arial, Helvetica;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+#container.news article > div h4 a {
+  color: #f15b23;
+}
+#container.news article > div p {
+  padding: 0 0 0 20px;
+  line-height: 17px;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+#container.news article > div a.button.black {
+  width: 68px;
+  height: 22px;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  margin-left: 20px;
+  font-weight: normal;
+  line-height: 22px;
+  font-size: 13px;
+  font-family: Arial, helvetica;
+}
+#container.news.detail .img_border {
+  width: 880px;
+  min-height: 225px;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,.2);
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+  padding: 10px;
+}
+#container.news.detail h4 {
+  color: #f15b23;
+  font-family: 'HelvethaicaMon Med', Arial, Helvetica;
+  font-weight: normal;
+  margin: 20px 0 15px;
+}
+#container.news.detail p {
+  font-size: 18px;
+  line-height: 17px;
+  margin-right: 20px;
+}
 /* Fix CSS Bug */
 .ie8 .rsDefault .rsArrowIcn {
   background-color: #f15b23;
