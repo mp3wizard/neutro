@@ -82,6 +82,10 @@ header nav ul li a {
   padding: 0 29px;
   letter-spacing: .5px;
 }
+header nav ul li a span {
+  height: 20px;
+  display: block;
+}
 header nav ul li a:hover,
 header nav ul li a.active {
   color: #000;
